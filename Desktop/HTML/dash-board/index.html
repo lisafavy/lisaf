@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sign Up Form -->
+  <div class="container" id="signupContainer">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Choose a Username" />
+        <small class="error" id="usernameError"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Enter Your Email" />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Create Password" />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Dashboard (hidden at first) -->
+  <div id="dashboard">
+    <header>
+      <h1>Welcome, <span id="userWelcome"></span> 🎉</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+    <main>
+      <div class="card">📊 User Stats</div>
+      <div class="card">📁 Your Files</div>
+      <div class="card">⚙️ Settings</div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
